@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Type:</strong>
+  <%= @dog.type %>
+</p>
+
+<p>
+  <strong>Gender:</strong>
+  <%= @dog.gender %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @dog.age %>
+</p>
+
+<p>
+  <strong>Spayed/neutered:</strong>
+  <%= @dog.spayed/neutered %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @dog.image %>
+</p>
+
+<%= link_to 'Edit', edit_dog_path(@dog) %> |
+<%= link_to 'Back', dogs_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  gender: MyString
+  age: 1
+  spayed/neutered: false
+  image: MyString
+
+two:
+  type: 
+  gender: MyString
+  age: 1
+  spayed/neutered: false
+  image: MyString
