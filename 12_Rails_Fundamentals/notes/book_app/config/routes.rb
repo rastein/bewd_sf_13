@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :books
+<<<<<<< HEAD
   resources :books
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
@@ -55,4 +56,12 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+=======
+
+  root "books#index"
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
+  # Serve websocket cable requests in-process
+  # mount ActionCable.server => '/cable'
+>>>>>>> 69a21e41517a5c85387a5f133e9fed41dcf36da2
 end
