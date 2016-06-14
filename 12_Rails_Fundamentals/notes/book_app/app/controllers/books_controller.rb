@@ -1,23 +1,35 @@
 class BooksController < ApplicationController
   before_action :set_book, only: [:show, :edit, :update, :destroy]
 
+<<<<<<< HEAD
   # GET /books
   # GET /books.json
+=======
+>>>>>>> f6c266d8be73c9af1496ff1165e33c9a80725c9f
   def index
     @books = Book.all
   end
 
+<<<<<<< HEAD
   # GET /books/1
   # GET /books/1.json
   def show
   end
 
   # GET /books/new
+=======
+  def show
+  end
+
+>>>>>>> f6c266d8be73c9af1496ff1165e33c9a80725c9f
   def new
     @book = Book.new
   end
 
+<<<<<<< HEAD
   # GET /books/1/edit
+=======
+>>>>>>> f6c266d8be73c9af1496ff1165e33c9a80725c9f
   def edit
   end
 

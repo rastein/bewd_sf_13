@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <%= form_for(@book) do |f| %>
   <% if @book.errors.any? %>
     <div id="error_explanation">
@@ -5,6 +6,15 @@
 
       <ul>
       <% @book.errors.full_messages.each do |message| %>
+=======
+<%= form_for(book) do |f| %>
+  <% if book.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(book.errors.count, "error") %> prohibited this book from being saved:</h2>
+
+      <ul>
+      <% book.errors.full_messages.each do |message| %>
+>>>>>>> f6c266d8be73c9af1496ff1165e33c9a80725c9f
         <li><%= message %></li>
       <% end %>
       </ul>
@@ -12,6 +22,7 @@
   <% end %>
 
   <div class="field">
+<<<<<<< HEAD
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </div>
@@ -35,6 +46,37 @@
     <%= f.label :image %><br>
     <%= f.text_field :image %>
   </div>
+=======
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :author %>
+    <%= f.text_field :author %>
+  </div>
+
+  <div class="field">
+    <%= f.label :year_published %>
+    <%= f.number_field :year_published %>
+  </div>
+
+  <div class="field">
+    <%= f.label :genre %>
+    <%= f.text_field :genre %>
+  </div>
+
+  <div class="field">
+    <%= f.label :available %>
+    <%= f.check_box :available %>
+  </div>
+
+  <div class="field">
+    <%= f.label :image %>
+    <%= f.text_field :image %>
+  </div>
+
+>>>>>>> f6c266d8be73c9af1496ff1165e33c9a80725c9f
   <div class="actions">
     <%= f.submit %>
   </div>

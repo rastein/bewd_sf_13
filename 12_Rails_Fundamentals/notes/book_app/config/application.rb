@@ -11,6 +11,7 @@ module BookApp
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+<<<<<<< HEAD
 
     # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
@@ -22,5 +23,7 @@ module BookApp
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+=======
+>>>>>>> f6c266d8be73c9af1496ff1165e33c9a80725c9f
   end
 end
